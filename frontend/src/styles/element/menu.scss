@@ -1,0 +1,59 @@
+// 菜单样式覆盖
+:deep(.el-menu) {
+  .el-sub-menu {
+    .el-sub-menu__title {
+      .el-icon {
+        &.el-sub-menu__icon-arrow {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '+';
+        position: absolute;
+        right: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: none;
+      }
+    }
+
+    &.is-opened {
+      > .el-sub-menu__title {
+        &::after {
+          content: '-';
+        }
+      }
+    }
+  }
+}
+
+// 强制覆盖所有箭头相关样式
+:deep(.el-sub-menu__icon-arrow) {
+  display: none !important;
+}
+
+:deep(.el-icon.el-sub-menu__icon-arrow) {
+  display: none !important;
+}
+
+:deep(.el-sub-menu__title) {
+  .el-icon {
+    margin-right: 0 !important;
+  }
+}
+
+// 全局隐藏所有箭头相关的元素
+.el-sub-menu__icon-arrow,
+.el-icon-arrow-right,
+.el-icon-arrow-down,
+.el-icon-arrow-up,
+.el-icon-arrow-left,
+[class*='el-icon-arrow'],
+.el-icon.el-sub-menu__icon-arrow {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  height: 0 !important;
+}

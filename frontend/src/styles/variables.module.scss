@@ -1,0 +1,17 @@
+@use './_variables.scss' as v;
+
+:export {
+  menuBg: v.$menu-bg;
+  menuText: v.$menu-text;
+  menuActiveText: v.$menu-active-text;
+  menuHover: v.$menu-hover;
+  menuItemHeight: v.$menu-item-height;
+  menuPadding: v.$menu-padding;
+  sidebarWidth: v.$sidebar-width;
+  sidebarHideWidth: v.$sidebar-hide-width;
+  sidebarDuration: v.$sidebar-transition-duration;
+  navbarHeight: v.$navbar-height;
+  mainPadding: v.$main-padding;
+  mainBg: v.$main-bg;
+  colorPrimary: v.$color-primary;
+}
