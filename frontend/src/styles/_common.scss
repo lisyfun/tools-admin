@@ -1,0 +1,95 @@
+// 布局相关
+.app-container {
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+// 图表相关
+.chart-container {
+  width: 100%;
+  padding: 20px;
+
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .chart-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303133;
+    margin: 0;
+  }
+
+  .chart {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+// 表单相关
+.search-form {
+  margin-bottom: 16px;
+  
+  .el-form-item {
+    margin-bottom: 16px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 下拉菜单相关
+.custom-select-dropdown {
+  border-radius: 6px;
+  padding: 4px;
+  
+  .el-select-dropdown__item {
+    border-radius: 4px;
+    margin: 2px 0;
+    
+    &.selected {
+      background-color: var(--el-color-primary-light-9);
+      
+      .option-icon {
+        color: var(--el-color-primary);
+      }
+    }
+    
+    &:hover {
+      background-color: var(--el-fill-color-light);
+    }
+  }
+}
+
+// 状态标签
+.status-tag {
+  &--success {
+    background-color: var(--el-color-success-light-9);
+    color: var(--el-color-success);
+  }
+  
+  &--warning {
+    background-color: var(--el-color-warning-light-9);
+    color: var(--el-color-warning);
+  }
+  
+  &--danger {
+    background-color: var(--el-color-danger-light-9);
+    color: var(--el-color-danger);
+  }
+  
+  &--info {
+    background-color: var(--el-color-info-light-9);
+    color: var(--el-color-info);
+  }
+}

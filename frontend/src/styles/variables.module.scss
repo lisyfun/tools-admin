@@ -1,17 +1,35 @@
 @use './_variables.scss' as v;
 
+// 导出到 JavaScript 的变量
+// 这些变量可以在 JavaScript 中通过 import styles from './variables.module.scss' 使用
 :export {
+  // 主题颜色
+  colorPrimary: v.$color-primary;
+  colorSuccess: v.$color-success;
+  colorWarning: v.$color-warning;
+  colorDanger: v.$color-danger;
+  colorInfo: v.$color-info;
+
+  // 菜单相关
   menuBg: v.$menu-bg;
   menuText: v.$menu-text;
   menuActiveText: v.$menu-active-text;
   menuHover: v.$menu-hover;
+  menuActiveBg: v.$menu-active-bg;
   menuItemHeight: v.$menu-item-height;
   menuPadding: v.$menu-padding;
+
+  // 布局尺寸
   sidebarWidth: v.$sidebar-width;
   sidebarHideWidth: v.$sidebar-hide-width;
   sidebarDuration: v.$sidebar-transition-duration;
   navbarHeight: v.$navbar-height;
   mainPadding: v.$main-padding;
   mainBg: v.$main-bg;
-  colorPrimary: v.$color-primary;
+  contentPadding: v.$content-padding;
+  contentGap: v.$content-gap;
+
+  // 其他
+  borderRadiusBase: v.$border-radius-base;
+  boxShadowBase: v.$box-shadow-base;
 }

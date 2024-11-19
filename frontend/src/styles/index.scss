@@ -1,5 +1,7 @@
-@use 'variables' as *;
-@use 'element/menu.scss';
+// 使用新的 @use 规则
+@use './_variables.scss' as *;
+@use './element/menu.scss';
+@use './_common.scss';
 
 // 引入阿里妈妈数黑体
 @font-face {
